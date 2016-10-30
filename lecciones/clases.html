@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clases in ES6/ES2015</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    
+</body>
+<script>
+    class Alebrije {
+        constructor(name, animal, sound){
+            this.name = name;
+            this.animal = animal;
+            this.sound = sound;
+        }
+        makeSound(){
+            alert(this.sound + "!!!!");
+        }
+    }
+    function alebrije_sound(){
+        alebrije = new Alebrije("Alas naranja", "Mantis", "Criiii Criiii");
+        alebrije.makeSound();
+    }
+</script>
+</html>
