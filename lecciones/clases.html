@@ -17,7 +17,15 @@
             this.sound = sound;
         }
         makeSound(){
-            alert(this.sound + "!!!!");
+            alert(this.exclamed_sound);
+        }
+
+        get name() {
+            return this.name;
+        }
+
+        get exclamed_sound() {
+            return this.sound + "!!!!"
         }
     }
     function alebrije_sound(){
