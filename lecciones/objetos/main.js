@@ -1,9 +1,9 @@
 // let nombre = "Héctor";
-let edad = 27;/
+let edad = 27;
 
 function persona(nombre, edad){
     return {
-        name,
+        nombre,
         edad,
         saludar(){
             return `Hola, ${this.name}`;
@@ -18,10 +18,10 @@ hector = persona('Hector', 27);
 let {name, age} = hector; // Ahora name = 'hector', age = 27
 
 
-function presentarPersona({name, age}){ // podemos deconstruir valores justo en los parámetros de las funcionres.
-    console.log(name);
-    console.log(persona);
-    return `Te presento a ${name}, tiene ${age} años`;
+function presentarPersona({nombre, edad}){ // podemos deconstruir valores justo en los parámetros de las funcionres.
+    console.log(nombre);
+    console.log(edad);
+    return `Te presento a ${nombre}, tiene ${edad} años`;
 }
 
-deconstructPersona(hector);
+console.log(presentarPersona(hector));
