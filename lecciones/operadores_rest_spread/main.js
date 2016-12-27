@@ -1,9 +1,7 @@
 // El operador rest (...) toma todos parátros y los guarda en un array
 
 function sumar(...numeros) {
-    return numbers.reduce(function(acc, item){
-        return acc + item;
-    })
+    return numbers.reduce( (acc, item) => { acc + item });
 }
 
 
